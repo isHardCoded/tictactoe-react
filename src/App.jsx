@@ -1,5 +1,5 @@
 import './App.css'
-import Board from './components/Board'
+import Game from './components/Game'
 import Title from './components/Title'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className='game'>
       <Title />
       <div>
-        <Board/>
+        <Game/>
       </div>
     </div>
   )

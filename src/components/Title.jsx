@@ -15,9 +15,9 @@ const Title = () => {
     }, [])
 
     return (
-        <>
+        <div className="title">
             <h1>Play! {titles[titleIndex]}</h1>
-        </>
+        </div>
     )
 }
 
