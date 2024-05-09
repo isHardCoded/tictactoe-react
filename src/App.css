@@ -1,8 +1,24 @@
 :root {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+}
 
-    margin-top: 275px;
+.board-row {
+    display: flex;
+}
+
+.square {
+    outline: none;
+    border: 1px rgb(255, 255, 255) solid;
+    background: rgb(41, 41, 41);
+    font-size: 60px;
+    cursor: pointer;
+
+    width: 100px;
+    height: 100px;
+
+    color: white;
 }
 
 .game {
@@ -10,4 +26,44 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+}
+
+.title {
+    color: white;
+}
+
+.board .status {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.game-info ol {
+    display: flex;
+    max-width: 300px;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    justify-content: space-around;
+    list-style: none;
+}
+
+.game-info ol li button {
+    outline: none;
+    border: none;
+    padding: 10px;
+
+    border-radius: 5px;
+    background: rgb(31, 31, 31);
+
+    color: white;
+    cursor: pointer;
+}
+
+.game-info ol li button:hover {
+    transform: scale(1.05);
+}
+
+.game-info ol li button:focus {
+    background: rgb(255, 255, 255);
+    color: black;
 }
